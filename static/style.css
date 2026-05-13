@@ -8,7 +8,7 @@ body {
     font-family: system-ui, sans-serif;
     line-height: 1.6;
     min-height: 100vh;
-    background: #0f0f1a;
+    background: #82c2db;
     color: #e8e0f0;
     display: flex;
     flex-direction: column;
@@ -17,17 +17,17 @@ body {
 nav {
     background: #1a1025;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #2a1a3a;
+    border-bottom: 1px solid #63d184;
 }
 
 nav a {
-    color: #c0a0e0;
+    color: #21f055;
     text-decoration: none;
     font-weight: 600;
     margin-right: 1.5rem;
 }
 
-nav a:hover { color: #e0c0ff; }
+nav a:hover { color: #ec7a4d; }
 
 main {
     flex: 1;

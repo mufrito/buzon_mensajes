@@ -23,8 +23,16 @@ async def inicio(request: Request):
 
 
 @app.post("/enviar")
-async def enviar_mensaje(autor: str = Form(...), mensaje: str = Form(...)):
-    mensajes_db.append({"autor": autor, "mensaje": mensaje})
+async def enviar_mensaje(
+    autor: str = Form(...),
+    mensaje: str = Form(...),
+    color: str = Form(...),       
+):
+    mensajes_db.append({
+        "autor": autor,
+        "mensaje": mensaje,
+        "color": color,            
+    })
     return RedirectResponse(url="/muro", status_code=303)
 
 
